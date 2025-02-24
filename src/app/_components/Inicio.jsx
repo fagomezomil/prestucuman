@@ -30,8 +30,12 @@ export default function Inicio() {
             scrub: 1,
           },
         })
+        scrollTl.to(tucumanLogoRef.current, {
+          duration: .5,
+          y: 900,
+        })
         scrollTl.to(montanaRef.current, {
-          duration: 3,
+          duration: .5,
           y: -1000
         })
       }
@@ -168,7 +172,7 @@ export default function Inicio() {
       <div>
         <div
           ref={montanaRef}
-          className="z-10 absolute bottom-[-1000px] left-0 w-full "
+          className="z-10 absolute bottom-[-1100px] left-0 w-full "
         >
           <Image src={Montana} alt="Logo" className="w-screen" priority />
         </div>
