@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import Montana from "../images/montana.svg";
 import TucumanLogo from "../images/tucumanlogo.svg";
-import Iglesia from "../images/iglesia.svg";
+import Casah from "../images/casahistorica.svg";
 import TexturaCalchaqui from "../images/textura-calchaqui.svg";
 import Image from "next/image";
 import { useEffect } from "react";
@@ -15,7 +15,7 @@ export default function Inicio() {
   const containerRef = useRef(null);
   const tucumanLogoRef = useRef(null);
   const circuloRef = useRef(null);
-  const iglesiaRef = useRef(null);
+  const casahRef = useRef(null);
   const texturaCalRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -33,52 +33,25 @@ export default function Inicio() {
             markers: true,
             scrub: 1,
           },
-        })
-        scrollTl.to(tucumanLogoRef.current, {
-          
-        })
+        });
+        scrollTl.to(tucumanLogoRef.current, {});
         scrollTl.to(circuloRef.current, {
-          delay : 1,
+          delay: 1,
           duration: 2,
-          y: -850
-        })
-        scrollTl.to(iglesiaRef.current, {
-          delay : 1,
-          y: 600
-        })
-        scrollTl.to(texturaCalRef.current, {
-          opacity: 1
-        })
+          y: -850,
+        });
+        scrollTl.to(casahRef.current, {
+          delay: 1,
+          y: 600,
+        });
+        // scrollTl.to(texturaCalRef.current, {
+        //   opacity: 1
+        // })
         scrollTl.to(montanaRef.current, {
           duration: 2,
-          y: -1000
-        })
-      }
-      // onComplete: () => {
-      //   const scrollTl = gsap.timeline({
-      //     scrollTrigger: {
-      //       trigger: containerRef.current,
-      //       start: "bottom 80%",
-      //       end: "20% 20%",
-      //       markers: true,
-      //       scrub: 1,
-      //     },
-      //   });
-      //   scrollTl.to(montanaRef.current, {
-      //     y: -1000,
-      //     duration: 1,
-      //     ease: "power2.inOut",
-      //   });
-      //   scrollTl.to(tucumanLogoRef.current, {
-      //     duration: 1,
-      //     y: -1500,
-      //     scale: 2,
-      //     ease: "power2.inOut",
-      //   });
-      //   scrollTl.to(circuloRef.current, {
-      //     y: -1200,
-      //   });
-      // },
+          y: -1000,
+        });
+      },
     });
     tl.to(montanaRef.current, {
       y: -450,
@@ -86,7 +59,6 @@ export default function Inicio() {
       ease: "power2.inOut",
     });
     tl.to(tucumanLogoRef.current, {
-
       y: -900,
       scale: 1.5,
       ease: "power2.inOut",
@@ -94,101 +66,28 @@ export default function Inicio() {
     tl.to(circuloRef.current, {
       y: -780,
     });
-    tl.to(iglesiaRef.current, {
+    tl.to(casahRef.current, {
       y: -580,
-      scale: 1.2,
+      scale: 1,
       ease: "power2.inOut",
-    })
-
-    // if (montanaRef.current && tucumanLogoRef.current && circuloRef.current) {
-    //   const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: containerRef.current,
-    //       start: "bottom 99%",
-    //       end: "20% 20%",
-    //       markers: true,
-    //       scrub: 1,
-    //     },
-    //   });
-    //   tl.to(montanaRef.current, {
-    //     y: -400,
-    //     duration: 1,
-    //     ease: "power2.inOut",
-    //   });
-    //   tl.to(tucumanLogoRef.current, {
-    //     duration: 1,
-    //     y: -900,
-    //     scale: 1.5,
-    //     ease: "power2.inOut",
-    //   });
-    //   tl.to(circuloRef.current, {
-    //     y: -780,
-    //   });
-    // }
-
-    // // gsap.set(montanaRef.current, { y: -400, opacity: 10 },);
-    // const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: containerRef.current,
-    //         start: "bottom 80%",
-    //         end: "20% 20%",
-    //         markers: true,
-    //         scrub: 1,
-    //       }
-    //     });
-    // tl.from(texturaCalRef.current, {
-    //   opacity: 0.1,
-    //   duration: 1,
-    // });
-    // tl.to(
-    //   montanaRef.current,
-    //   {
-    //     y: -400,
-    //   },
-    //   {}
-    // );
-    // tl.to(
-    //   tucumanLogoRef.current,
-    //   {
-    //     duration: 1,
-    //     y: -900,
-    //     scale: 1.5,
-    //     ease: "power2.inOut",
-    //   },
-    //   "-=1"
-    // );
-    // tl.to(circuloRef.current, {
-    //   y: -780,
-    // });
-    //     // tl.repeat(-1);
-    //     // tl.yoyo(true);
-
-    // const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: containerRef.current,
-    //         start: "bottom 80%",
-    //         end: "20% 20%",
-    //         markers: true,
-    //         scrub: 1,
-    //       }
-    //     });
-    //     tl.to(montanaRef.current, {
-    //         y: '50%', // anima el montanao hacia el centro
-    //         duration: 2,
-    //         ease: "power2.inOut",
-    //       });
-    //       tl.to(tucumanLogoRef.current, {
-    //           x: 0,
-    //           duration: 2,
-    //           ease: "power2.inOut",
-    //         });
+    });
+    tl.to(texturaCalRef.current, {
+      scale: 1.8,
+      opacity: 0.1,
+    });
   }, []);
   return (
     <div
       ref={containerRef}
-      className="bg-[#D6E9CF] bg-[url(/images/textura-calchaqui.svg)] -z-20 h-screen overflow-hidden flex items-end justify-center relative"
+      className="bg-[#D6E9CF] -z-20 h-screen overflow-hidden flex items-end justify-center relative"
     >
-      {/* <Image src={TexturaCalchaqui} ref={texturaCalRef} alt="textura" priority className="w-screen opacity-15 -z-10" /> */}
+      <Image
+        ref={texturaCalRef}
+        src={TexturaCalchaqui}
+        alt="Logo"
+        priority
+        className="absolute top -z-10 opacity-10 h-screen "
+      />
       <div>
         <div
           ref={montanaRef}
@@ -205,6 +104,7 @@ export default function Inicio() {
       >
         <circle cx="250" cy="250" r="250" fill="#db5723" className="bg-[]" />
       </svg>
+        
       <Image
         ref={tucumanLogoRef}
         src={TucumanLogo}
@@ -213,11 +113,11 @@ export default function Inicio() {
         className="absolute -z-10 bottom-[-400px]"
       />
       <Image
-        ref={iglesiaRef}
-        src={Iglesia}
+        ref={casahRef}
+        src={Casah}
         alt="Logo"
         priority
-        className="absolute bottom-[-600px] left-0 z-30 ml-16"
+        className="absolute bottom-[-600px] -left-36 z-30"
       />
     </div>
   );
