@@ -12,12 +12,13 @@ import TexturaCalchaqui from "../images/textura-calchaqui.svg";
 import Image from "next/image";
 import { useEffect } from "react";
 
-
 import LogoHistorica from "../images/historicalogo.svg";
 import LogoYungas from "../images/yungaslogo.svg";
 import LogoSur from "../images/surlogo.svg";
 import LogoChoromoro from "../images/choromorologo.svg";
 import LogoCalchaqui from "../images/calchaquilogo.svg";
+import LogoGobTuc from "../images/logogobtuc.svg";
+import MenuDestinos from "./MenuDestinos";
 
 export default function Inicio() {
   const montanaRef = useRef(null);
@@ -27,7 +28,9 @@ export default function Inicio() {
   const casahRef = useRef(null);
   const texturaCalRef = useRef(null);
   const tieneTodoRef = useRef(null);
+  const logoGobRef = useRef(null);
   const logosRef = useRef(null);
+  const menuDestinosRef = useRef(null);
 
   const logos = {
     LogoHistorica,
@@ -36,7 +39,6 @@ export default function Inicio() {
     LogoChoromoro,
     LogoCalchaqui,
   };
-
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -54,11 +56,14 @@ export default function Inicio() {
             scrub: 1,
           },
         });
-        scrollTl.to(tucumanLogoRef.current, {});
+        scrollTl.to(tucumanLogoRef.current, {
+          // duration: 2,
+          // y: -1200,
+        });
         scrollTl.to(circuloRef.current, {
           delay: 1,
           duration: 2,
-          y: -850,
+          y: -780,
         });
         scrollTl.to(casahRef.current, {
           delay: 1,
@@ -71,6 +76,10 @@ export default function Inicio() {
           duration: 2,
           y: -1000,
         });
+        scrollTl.to(menuDestinosRef.current, {
+          duration: 2,
+          opacity: 1,
+        })
       },
     });
     tl.to(montanaRef.current, {
@@ -86,9 +95,9 @@ export default function Inicio() {
     tl.to(tieneTodoRef.current, {
       duration: 1,
       y: -550,
-    })
+    });
     tl.to(texturaCalRef.current, {
-      duration: .7,
+      duration: 0.7,
       y: -100,
       scale: 2,
       opacity: 0.1,
@@ -101,30 +110,16 @@ export default function Inicio() {
       scale: 1,
       ease: "power2.inOut",
     });
-    
-    const logosTl = gsap.timeline({
-      
-    
+    tl.to(logoGobRef.current, {
+      opacity: 1,
     });
-    logosTl.to(logosRef.current, {
-      duration: 2,
-      x: -300,
-      ease: 'power2.inOut',
-    });
-    // logosTl.staggerTo('.logo-button', 1, {
-    //   duration: 1,
-    //   x: 0,
-    //   opacity: 1,
-    //   ease: 'power2.inOut',
-    // }, 1);
+    
   }, []);
-
-  
 
   return (
     <div
       ref={containerRef}
-      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative"
+      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative shadow-xl"
     >
       <Image
         ref={texturaCalRef}
@@ -133,14 +128,22 @@ export default function Inicio() {
         priority
         className="z-10 opacity-0 absolute bottom-0 blur-[1px]"
       />
+      <Image
+        ref={logoGobRef}
+        src={LogoGobTuc}
+        alt="Logo"
+        priority
+        className="z-10 absolute left-0 top-0 h-[100px] opacity-0 mt-10"
+      />
       <div>
-        <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row gap-8 mr-24">
+        <MenuDestinos ref={menuDestinosRef} className="opacity-100"/>
+        {/* <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row gap-8 mr-24">
           {Object.values(logos).map((logo, index) => (
             <button key={index} className="h-[100px]" onClick={() => { console.log(logos) }}>
               <Image src={logo} alt={`Logo ${index}`} priority />
             </button>
           ))}
-        </nav>
+        </nav> */}
         <div
           ref={montanaRef}
           className="z-20 absolute bottom-[-1500px] left-0 w-full "

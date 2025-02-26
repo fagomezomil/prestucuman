@@ -11,6 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'encode-sans': ['Encode Sans Semi Condensed', 'sans-serif'],
+        'ibm-plex-sans': ['IBM Plex Sans Condensed', 'sans-serif'],
+        'noto-serif': ['Noto Serif', 'serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],
