@@ -5,10 +5,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import Montana from "../images/montana.svg";
 import TucumanLogo from "../images/tucumanlogo.svg";
+import Tienetodo from "../images/tienetodo.svg";
 import Casah from "../images/casahistorica.svg";
 import TexturaCalchaqui from "../images/textura-calchaqui.svg";
+
 import Image from "next/image";
 import { useEffect } from "react";
+
+
+import LogoHistorica from "../images/historicalogo.svg";
+import LogoYungas from "../images/yungaslogo.svg";
+import LogoSur from "../images/surlogo.svg";
+import LogoChoromoro from "../images/choromorologo.svg";
+import LogoCalchaqui from "../images/calchaquilogo.svg";
 
 export default function Inicio() {
   const montanaRef = useRef(null);
@@ -17,6 +26,17 @@ export default function Inicio() {
   const circuloRef = useRef(null);
   const casahRef = useRef(null);
   const texturaCalRef = useRef(null);
+  const tieneTodoRef = useRef(null);
+  const logosRef = useRef(null);
+
+  const logos = {
+    LogoHistorica,
+    LogoYungas,
+    LogoSur,
+    LogoChoromoro,
+    LogoCalchaqui,
+  };
+
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -63,6 +83,16 @@ export default function Inicio() {
       scale: 1.5,
       ease: "power2.inOut",
     });
+    tl.to(tieneTodoRef.current, {
+      duration: 1,
+      y: -550,
+    })
+    tl.to(texturaCalRef.current, {
+      duration: .7,
+      y: -100,
+      scale: 2,
+      opacity: 0.1,
+    });
     tl.to(circuloRef.current, {
       y: -780,
     });
@@ -71,27 +101,49 @@ export default function Inicio() {
       scale: 1,
       ease: "power2.inOut",
     });
-    tl.to(texturaCalRef.current, {
-      scale: 1.8,
-      opacity: 0.1,
+    
+    const logosTl = gsap.timeline({
+      
+    
     });
+    logosTl.to(logosRef.current, {
+      duration: 2,
+      x: -300,
+      ease: 'power2.inOut',
+    });
+    // logosTl.staggerTo('.logo-button', 1, {
+    //   duration: 1,
+    //   x: 0,
+    //   opacity: 1,
+    //   ease: 'power2.inOut',
+    // }, 1);
   }, []);
+
+  
+
   return (
     <div
       ref={containerRef}
-      className="bg-[#D6E9CF] -z-20 h-screen overflow-hidden flex items-end justify-center relative"
+      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative"
     >
       <Image
         ref={texturaCalRef}
         src={TexturaCalchaqui}
         alt="Logo"
         priority
-        className="absolute top -z-10 opacity-10 h-screen "
+        className="z-10 opacity-0 absolute bottom-0 blur-[1px]"
       />
       <div>
+        <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row gap-8 mr-24">
+          {Object.values(logos).map((logo, index) => (
+            <button key={index} className="h-[100px]" onClick={() => { console.log(logos) }}>
+              <Image src={logo} alt={`Logo ${index}`} priority />
+            </button>
+          ))}
+        </nav>
         <div
           ref={montanaRef}
-          className="z-10 absolute bottom-[-1500px] left-0 w-full "
+          className="z-20 absolute bottom-[-1500px] left-0 w-full "
         >
           <Image src={Montana} alt="Logo" className="w-screen" priority />
         </div>
@@ -102,15 +154,22 @@ export default function Inicio() {
         height="500"
         className="absolute bottom-[-600px] -right-14"
       >
-        <circle cx="250" cy="250" r="250" fill="#db5723" className="bg-[]" />
+        <circle cx="250" cy="250" r="250" fill="#ED7219" className="bg-[]" />
       </svg>
-        
+
       <Image
         ref={tucumanLogoRef}
         src={TucumanLogo}
         alt="Logo"
         priority
-        className="absolute -z-10 bottom-[-400px]"
+        className="absolute z-10 bottom-[-400px]"
+      />
+      <Image
+        src={Tienetodo}
+        ref={tieneTodoRef}
+        alt="tiene todo"
+        priority
+        className="absolute bottom-[-150px] z-10"
       />
       <Image
         ref={casahRef}
