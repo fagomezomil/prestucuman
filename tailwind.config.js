@@ -10,6 +10,11 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        logoHistorica: '#FF69B4',
+        logoYungas: '#34A85A',
+        logoSur: '#FFC107',
+        logoChoromoro: '#8E24AA',
+        logoCalchaqui: '#4CAF50',
       },
       fontFamily: {
         'encode-sans': ['Encode Sans Semi Condensed', 'sans-serif'],
