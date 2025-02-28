@@ -29,7 +29,7 @@ export default function Planifica() {
       </div>
       <div className="">
 
-        <div className="w-1/4 p-10 ">
+        <div className="w-1/5 p-10 ">
           <div className="flex flex-row items-center">
             <p className="text-[24px] leading-7 font-weight-100  text-[#82BF73] pr-8">Elegí tu destino y <br /> planifica tu viaje</p>
             <FaCheckCircle className="text-[#82BF73] text-[40px]" />
