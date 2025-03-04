@@ -120,7 +120,7 @@ export default function Inicio() {
   return (
     <div
       ref={containerRef}
-      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative shadow-xl scrollbar-none"
+      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative shadow-xl"
     >
       <Image
         ref={texturaCalRef}
