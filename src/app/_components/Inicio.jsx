@@ -81,6 +81,7 @@ export default function Inicio() {
           opacity: 1,
         })
       },
+      
     });
     tl.to(montanaRef.current, {
       y: -450,
@@ -119,7 +120,7 @@ export default function Inicio() {
   return (
     <div
       ref={containerRef}
-      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative shadow-xl"
+      className="bg-[#D6E9CF] h-screen overflow-hidden flex items-end justify-center relative shadow-xl scrollbar-none"
     >
       <Image
         ref={texturaCalRef}
@@ -136,14 +137,7 @@ export default function Inicio() {
         className="z-10 absolute left-0 top-0 h-[100px] opacity-0 mt-10"
       />
       <div>
-        <MenuDestinos ref={menuDestinosRef} className="opacity-100"/>
-        {/* <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row gap-8 mr-24">
-          {Object.values(logos).map((logo, index) => (
-            <button key={index} className="h-[100px]" onClick={() => { console.log(logos) }}>
-              <Image src={logo} alt={`Logo ${index}`} priority />
-            </button>
-          ))}
-        </nav> */}
+        <MenuDestinos ref={menuDestinosRef} className="opacity-100" />
         <div
           ref={montanaRef}
           className="z-20 absolute bottom-[-1500px] left-0 w-full "

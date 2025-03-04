@@ -10,17 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        logoHistorica: '#FF69B4',
-        logoYungas: '#34A85A',
-        logoSur: '#FFC107',
-        logoChoromoro: '#8E24AA',
-        logoCalchaqui: '#4CAF50',
       },
       fontFamily: {
-        'encode-sans': ['Encode Sans Semi Condensed', 'sans-serif'],
-        'ibm-plex-sans': ['IBM Plex Sans Condensed', 'sans-serif'],
-        'noto-serif': ['Noto Serif', 'serif'],
-        'open-sans': ['Open Sans', 'sans-serif'],
+        'sofiacond': ['Sofia Sans Condensed', 'sans-serif'],
+      },
+      boxShadow: {
+        left: '0 0 20px 2px rgba(0, 0, 0, 0.1)',
       },
       fontWeight: {
         100: 100,
@@ -32,6 +27,13 @@ module.exports = {
         700: 700,
         800: 800,
         900: 900,
+      },
+      colors: {
+        historica: '#FF69B4',
+        yungas: '#34A85A',
+        sur: '#FFC107',
+        choromoro: '#8E24AA',
+        calchaqui: '#4CAF50',
       },
     },
   },

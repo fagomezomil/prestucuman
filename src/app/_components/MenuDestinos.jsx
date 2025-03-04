@@ -55,7 +55,7 @@ export default function MenuDestinos() {
           <button
             ref={(ref) => (logosRefs.current[index] = ref)}
             key={index}
-            className="h-[100px] opacity-0"
+            className=" opacity-0"
             onClick={() => {
               console.log(logos);
             }}
