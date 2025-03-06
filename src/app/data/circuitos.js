@@ -4,10 +4,12 @@ export default function circuitos() {
     return {
         "circuitos": [
             {
+                "circuito": "Yungas",
                 "nombre": "Yungas Tucumanas",
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
+                "color": "#187c29",
                 "destinos": [
                     {
                         "nombre": "Yerba Buena",
@@ -211,7 +213,104 @@ export default function circuitos() {
                         ]
                     }
                 ]
-            }
+            },
+            {
+                "circuito": "Historica",
+                "nombre": "Ciudad Histórica",	
+                "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
+                "imagen": "/images/quetupi.svg",
+                "textura":"/imagen/textura",
+                "color": "#187c29",
+                "destinos": [
+                    {
+                        "nombre": "Yerba Buena",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                "circuito": "Sur",
+                "nombre": "Sur Tucumano",	
+                "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
+                "imagen": "/images/quetupi.svg",
+                "textura":"/imagen/textura",
+                "color": "#187c29",
+                "destinos": [
+                    {
+                        "nombre": "Yerba Buena",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                "circuito": "Choromoro",
+                "nombre": "Valle de Choromoro",	
+                "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
+                "imagen": "/images/quetupi.svg",
+                "textura":"/imagen/textura",
+                "color": "#187c29",
+                "destinos": [
+                    {
+                        "nombre": "Yerba Buena",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                "circuito": "Calchaqui",
+                "nombre": "Valle Calchaquí",	
+                "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
+                "imagen": "/images/quetupi.svg",
+                "textura":"/imagen/textura",
+                "color": "#187c29",
+                "destinos": [
+                    {
+                        "nombre": "Yerba Buena",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    }
+                ]
+            },
         ]
+        
     };
 }

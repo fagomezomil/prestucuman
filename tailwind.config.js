@@ -29,12 +29,13 @@ module.exports = {
         900: 900,
       },
       colors: {
-        historica: '#FF69B4',
-        yungas: '#34A85A',
-        sur: '#FFC107',
-        choromoro: '#8E24AA',
-        calchaqui: '#4CAF50',
-      },
+        historica: {
+          DEFAULT: "#0f2652"
+        },
+        yungas: {
+          DEFAULT: "#0f522b"
+        }
+      }
     },
   },
   plugins: [],
