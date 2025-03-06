@@ -9,7 +9,7 @@ export default function circuitos() {
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
-                "color": "#187c29",
+                "color": "yungas",
                 "destinos": [
                     {
                         "nombre": "Yerba Buena",
@@ -220,7 +220,7 @@ export default function circuitos() {
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
-                "color": "#187c29",
+                "color": "historica",
                 "destinos": [
                     {
                         "nombre": "Yerba Buena",

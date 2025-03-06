@@ -31,10 +31,17 @@ module.exports = {
       colors: {
         historica: {
           DEFAULT: "#0f2652"
+          
         },
         yungas: {
           DEFAULT: "#0f522b"
-        }
+        },
+        choromoro: {
+          DEFAULT: "#a75818"
+        },
+        calchaqui: {
+          DEFAULT: "#861515"
+        },
       }
     },
   },

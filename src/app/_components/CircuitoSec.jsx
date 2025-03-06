@@ -4,13 +4,15 @@ import DestinoCard from './DestinoCard'
 
 import { PiHeartDuotone, PiHeartFill } from "react-icons/pi";
 
-export default function CircuitoSec({ circuitosData, favoritos, actualizarFavoritos }) {
+export default function CircuitoSec({ circuitosData, favoritos, actualizarFavoritos, circuitoSeleccionado }) {
+    const circuitosFiltrados = circuitosData.circuitos.filter((circuito) => circuito.circuito === circuitoSeleccionado);
+console.log(circuitosFiltrados)
     return (
         <div>
-            {circuitosData.circuitos.map((circuito, index) => (
+            {circuitosFiltrados.map((circuito, index) => (
                 <div key={index} className="grid grid-cols-7 relative">
                     <div className="col-span-2 mx-12 mt-20 ">
-                        <h2 className={`mb-6 uppercase font-800 text-[64px] leading-[50px] text-green-800`}>{circuito.nombre}</h2>
+                        <h2 className={`mb-6 uppercase font-800 text-[64px] leading-[50px] text-yungas`}>{circuito.nombre}</h2>
                         <p className="text-[34px] font-400 text-green-700 leading-[35px]">{circuito.destacado}</p>
                         <div className="flex flex-row items-center mt-16 gap-6">
                             <div>

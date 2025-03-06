@@ -25,7 +25,7 @@ const logos = {
 export default function Planifica() {
   const [favoritos, setFavoritos] = useState([]);
   const [circuitoSeleccionado, setCircuitoSeleccionado] = useState(null);
-
+  console.log(circuitoSeleccionado)
 
   const actualizarFavoritos = useCallback((nombre) => {
      const nuevosFavoritos = [...favoritos];
@@ -43,7 +43,7 @@ export default function Planifica() {
     <div className=" bg-white overflow-hidden font-400 h-screen mx-auto font-sofiacond relative">
       
       <div className="bg-white w-screen py-3 flex flex-row items-center justify-between shadow-md">
-        <Image src="/images/tucumanlogo.svg" alt="logo gob tuc" priority width={200} height={60} className="h-[60px]" />
+        <Image src="/images/tucumanlogo.svg" alt="logo gob tuc" priority width={200} height={60} className="h-[60px] ml-4" />
         <p className=" text-neutral-400 text-[42px] font-600 text-center font-sofiacond">
           Planifica tu viaje al Corazón del Norte Argentino
         </p>
@@ -59,7 +59,7 @@ export default function Planifica() {
             <div className="col-span-5 flex flex-row">
               {Object.values(logos).map((logo, index) => {
                 return (
-                  <button key={index} onClick={() => setCircuitoSeleccionado(logo.nombre)} className={`w-full h-full p-4 mb-4 flex items-center justify-center bg-stone-400 hover:bg-${logo.color} shadow-left`}>
+                  <button key={index} onClick={() => setCircuitoSeleccionado(logo.nombre)} className={`w-full h-full p-4 mb-4 flex items-center justify-center bg-stone-400 hover:bg-yungas shadow-left`}>
                     <Image src={logo.img} alt={`Logo ${index}`} className="h-[60px]" />
                   </button>
                 );
@@ -69,7 +69,7 @@ export default function Planifica() {
           </div>
         </div>
         <div className="">
-          <CircuitoSec circuitosData={circuitosData} favoritos={favoritos} actualizarFavoritos={actualizarFavoritos}/>
+          <CircuitoSec circuitosData={circuitosData} favoritos={favoritos} actualizarFavoritos={actualizarFavoritos} circuitoSeleccionado={circuitoSeleccionado}/>
           <div className="w-4/6 h-[60px] bg-neutral-200 absolute -bottom-[17px] right-0">Barrita</div>
 
           {/* {circuitosData.circuitos.map((circuito, index) => (
