@@ -6,12 +6,13 @@ import { PiHeartDuotone, PiHeartFill } from "react-icons/pi";
 
 
 export default function DestinoCard({ circuito, favoritos, actualizarFavoritos }) {
+    console.log(circuito)
   
   return (
     <div>
         {circuito.destinos.map((destino, index) => (
                             <div key={index} className="">
-                                <h3 className="font-800 rounded-md bg-green-600 text-white text-3xl w-fit px-4 my-4">{destino.nombre}</h3>
+                                <h3 className={`font-700 rounded-md bg-${destino.color}-1 text-white text-3xl w-fit px-4 my-4`}>{destino.nombre}</h3>
                                 <div className="grid grid-cols-5 gap-4">
                                     {destino.productos.map((producto, index) => (
                                         <div key={index} className="border border-neutral-100 w-fit h-fit pb-4 rounded-md relative">

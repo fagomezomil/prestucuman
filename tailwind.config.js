@@ -7,10 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      
       fontFamily: {
         'sofiacond': ['Sofia Sans Condensed', 'sans-serif'],
       },
@@ -30,20 +27,49 @@ module.exports = {
       },
       colors: {
         historica: {
-          DEFAULT: "#0f2652"
-          
+          DEFAULT: "#01415C",
+          1: "#55ACB8"
         },
         yungas: {
-          DEFAULT: "#0f522b"
+          DEFAULT: "#66ac7c",
+          1: "#a1c372"
         },
         choromoro: {
-          DEFAULT: "#a75818"
+          DEFAULT: "#FD5901",
+          1: "#FAAB36"
         },
         calchaqui: {
-          DEFAULT: "#861515"
+          DEFAULT: "#9E2D2C",
+          1: "#D34040"
         },
+        sur: {
+          DEFAULT: "#508E6D",
+          1: "#8CB8A2"
+        }
       }
     },
   },
+  safelist: [
+    'text-historica',
+    'text-historica-1',
+    'bg-historica',
+    'bg-historica-1',
+    'text-yungas',
+    'text-yungas-1',
+    'bg-yungas',
+    'bg-yungas-1',
+    'text-choromoro',
+    'text-choromoro-1',
+    'bg-choromoro',
+    'bg-choromoro-1',
+    'text-calchaqui',
+    'text-calchaqui-1',
+    'bg-calchaqui',
+    'bg-calchaqui-1',
+    'text-sur',
+    'text-sur-1',
+    'bg-sur',
+    'bg-sur-1',
+  ],
   plugins: [],
 };

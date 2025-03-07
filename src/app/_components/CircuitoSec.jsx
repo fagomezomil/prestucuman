@@ -6,17 +6,16 @@ import { PiHeartDuotone, PiHeartFill } from "react-icons/pi";
 
 export default function CircuitoSec({ circuitosData, favoritos, actualizarFavoritos, circuitoSeleccionado }) {
     const circuitosFiltrados = circuitosData.circuitos.filter((circuito) => circuito.circuito === circuitoSeleccionado);
-console.log(circuitosFiltrados)
     return (
         <div>
             {circuitosFiltrados.map((circuito, index) => (
                 <div key={index} className="grid grid-cols-7 relative">
                     <div className="col-span-2 mx-12 mt-20 ">
-                        <h2 className={`mb-6 uppercase font-800 text-[64px] leading-[50px] text-yungas`}>{circuito.nombre}</h2>
-                        <p className="text-[34px] font-400 text-green-700 leading-[35px]">{circuito.destacado}</p>
+                        <h2 className={`mb-6 uppercase font-800 text-[64px] leading-[50px] text-${circuito.color}`}>{circuito.nombre}</h2>
+                        <p className={`text-[34px] font-400 text-neutral-500 leading-[35px]`}>{circuito.destacado}</p>
                         <div className="flex flex-row items-center mt-16 gap-6">
                             <div>
-                                <p className="text-green-500 font-400 italic text-3xl">Armá tu itinerario y descargalo</p>
+                                <p className={`text-${circuito.color}-1 font-400 italic text-3xl`}>Armá tu itinerario y descargalo</p>
                                 {favoritos.length === 0 ? (
                                     <p className="text-2xl font-400 text-neutral-400">No hay destinos seleccionados</p>
                                 ) : (
@@ -25,9 +24,9 @@ console.log(circuitosFiltrados)
                             </div>
                             <div>
                                 {favoritos.length !== 0 ? (
-                                    <PiHeartFill className="text-green-700 rounded-full bg-white border border-neutral-200 p-2 text-[60px] shadow-lg" />
+                                    <PiHeartFill className={`text-${circuito.color} rounded-full bg-white border border-neutral-200 p-2 text-[60px] shadow-lg`} />
                                 ) : (
-                                    <PiHeartDuotone className="text-green-700 rounded-full bg-white border border-neutral-200 p-2 text-[60px] shadow-lg" />
+                                    <PiHeartDuotone className={`text-${circuito.color} rounded-full bg-white border border-neutral-200 p-2 text-[60px] shadow-lg`} />
                                 )}
                             </div>
                         </div>

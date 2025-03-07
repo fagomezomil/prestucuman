@@ -13,6 +13,7 @@ export default function circuitos() {
                 "destinos": [
                     {
                         "nombre": "Yerba Buena",
+                        "color": "yungas",
                         "productos": [
                             {
                                 "nombre": "Portal Solar del Cerro",
@@ -63,6 +64,7 @@ export default function circuitos() {
                     },
                     {
                         "nombre": "San Javier",
+                        "color": "yungas",
                         "productos": [
                             {
                                 "nombre": "Ex Ciudad Universitaria",
@@ -185,6 +187,7 @@ export default function circuitos() {
                     },
                     {
                         "nombre": "Loma Bola",
+                        "color": "yungas",
                         "productos": [
 
                             {
@@ -200,6 +203,7 @@ export default function circuitos() {
                     },
                     {
                         "nombre": "Raco",
+                        "color": "yungas",
                         "productos": [
                             {
                                 "nombre": "Cabalgatas - Cruz de Yampa",
@@ -223,7 +227,8 @@ export default function circuitos() {
                 "color": "historica",
                 "destinos": [
                     {
-                        "nombre": "Yerba Buena",
+                        "nombre": "San Miguel de Tucumán",
+                        "color": "historica",
                         "productos": [
                             {
                                 "nombre": "Portal Solar del Cerro",
@@ -244,10 +249,11 @@ export default function circuitos() {
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
-                "color": "#187c29",
+                "color": "sur",
                 "destinos": [
                     {
-                        "nombre": "Yerba Buena",
+                        "nombre": "Famaillá",
+                        "color": "sur",
                         "productos": [
                             {
                                 "nombre": "Portal Solar del Cerro",
@@ -268,10 +274,11 @@ export default function circuitos() {
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
-                "color": "#187c29",
+                "color": "choromoro",
                 "destinos": [
                     {
-                        "nombre": "Yerba Buena",
+                        "nombre": "San Pedro de Colalao",
+                        "color": "choromoro",
                         "productos": [
                             {
                                 "nombre": "Portal Solar del Cerro",
@@ -292,13 +299,14 @@ export default function circuitos() {
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
                 "imagen": "/images/quetupi.svg",
                 "textura":"/imagen/textura",
-                "color": "#187c29",
+                "color": "calchaqui",
                 "destinos": [
                     {
-                        "nombre": "Yerba Buena",
+                        "nombre": "El Mollar",
+                        "color": "calchaqui",
                         "productos": [
                             {
-                                "nombre": "Portal Solar del Cerro",
+                                "nombre": "Parque Arqueológico Los Menhires",
                                 "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
                                 "categorias": ["Aventura", "Naturaleza"],
                                 "ubicacion": "null",
