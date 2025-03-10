@@ -6,11 +6,10 @@ import { useRef } from "react";
 import Montana from "../images/montana.svg";
 import TucumanLogo from "../images/tucumanlogo.svg";
 import Tienetodo from "../images/tienetodo.svg";
-import Casah from "../images/casahistorica.svg";
-import TexturaCalchaqui from "../images/textura-calchaqui.svg";
+import TexturaTucuman from "../images/textura-tucuman.svg";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import LogoHistorica from "../images/historicalogo.svg";
 import LogoYungas from "../images/yungaslogo.svg";
@@ -32,13 +31,16 @@ export default function Inicio() {
   const logosRef = useRef(null);
   const menuDestinosRef = useRef(null);
 
-  const logos = {
-    LogoHistorica,
-    LogoYungas,
-    LogoSur,
-    LogoChoromoro,
-    LogoCalchaqui,
-  };
+  const [imgInicio, setImgInicio] = useState("casahistorica-inicio");
+  console.log(imgInicio)
+
+const logos = {
+  Historica: { nombre: "Historica", logo: LogoHistorica, img: "casahistorica-inicio", color: "historica" },
+  Yungas: { nombre: "Yungas", logo: LogoYungas, img: "quetupi-inicio", color: "yungas" },
+  Sur: { nombre: "Sur", logo: LogoSur, img: "azucenaempanada-inicio", color: "sur" },
+  Choromoro: { nombre: "Choromoro", logo: LogoChoromoro, img: "pozoindio-inicio", color: "choromoro" },
+  Calchaqui: { nombre: "Calchaqui", logo: LogoCalchaqui, img: "menhires-inicio", color: "calchaqui" },
+};
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -52,7 +54,7 @@ export default function Inicio() {
             // end: "bottom 20%",
             start: "top 20%",
             end: "bottom 80%",
-            markers: true,
+            markers: false,
             scrub: 1,
           },
         });
@@ -67,7 +69,7 @@ export default function Inicio() {
         });
         scrollTl.to(casahRef.current, {
           delay: 1,
-          y: 600,
+          y: 620,
         });
         // scrollTl.to(texturaCalRef.current, {
         //   opacity: 1
@@ -107,8 +109,8 @@ export default function Inicio() {
       y: -780,
     });
     tl.to(casahRef.current, {
-      y: -580,
-      scale: 1,
+      y: -620,
+      scale: 1.6,
       ease: "power2.inOut",
     });
     tl.to(logoGobRef.current, {
@@ -124,7 +126,7 @@ export default function Inicio() {
     >
       <Image
         ref={texturaCalRef}
-        src={TexturaCalchaqui}
+        src={TexturaTucuman}
         alt="Logo"
         priority
         className="z-10 opacity-0 absolute bottom-0 blur-[1px]"
@@ -137,7 +139,7 @@ export default function Inicio() {
         className="z-10 absolute left-0 top-0 h-[100px] opacity-0 mt-10"
       />
       <div>
-        <MenuDestinos ref={menuDestinosRef} className="opacity-100" />
+        <MenuDestinos ref={menuDestinosRef} imgInicio={imgInicio} setImgInicio={setImgInicio} logos={logos} className="opacity-100" />
         <div
           ref={montanaRef}
           className="z-20 absolute bottom-[-1500px] left-0 w-full "
@@ -170,10 +172,12 @@ export default function Inicio() {
       />
       <Image
         ref={casahRef}
-        src={Casah}
+        src={`../images/${imgInicio}.svg`}
         alt="Logo"
         priority
-        className="absolute bottom-[-600px] -left-36 z-30"
+        className="absolute bottom-[-550px] left-0 z-30"
+        width={500}
+        height={500}
       />
     </div>
   );

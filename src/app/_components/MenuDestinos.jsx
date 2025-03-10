@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -8,17 +8,14 @@ import LogoSur from "../images/surlogo.svg";
 import LogoChoromoro from "../images/choromorologo.svg";
 import LogoCalchaqui from "../images/calchaquilogo.svg";
 import Image from "next/image";
+import { FaChevronCircleRight } from "react-icons/fa";
 
-const logos = {
-  LogoHistorica,
-  LogoYungas,
-  LogoSur,
-  LogoChoromoro,
-  LogoCalchaqui,
-};
 
-export default function MenuDestinos() {
+export default function MenuDestinos({ logos, imgInicio, setImgInicio }) {
   const logosRefs = useRef([]);
+  const textoRef = useRef(null);
+
+
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -46,10 +43,34 @@ export default function MenuDestinos() {
         },
       });
     });
+
+    // Agregar animación al texto
+    gsap.to(textoRef.current, {
+      duration: 2,
+      opacity: 1,
+      delay: 1,
+      ease: "power2.inOut",
+    });
+
+    ScrollTrigger.create({
+      trigger: textoRef.current,
+      start: "bottom 80%",
+      end: "bottom 20%",
+      onEnter: () => {
+        gsap.to(textoRef.current, { opacity: 0, duration: 1 });
+      },
+      onLeave: () => {
+        gsap.to(textoRef.current, { delay: 2, opacity: 1, duration: 3 });
+      },
+    });
   }, []);
 
   return (
-    <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row gap-8 mr-24 translate-x-[300px]">
+    <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row items-center gap-8 mr-24 translate-x-[300px] font-sofiacond">
+      <div  ref={textoRef} className="absolute py-2 px-4 flex flex-row items-center border border-white rounded-md -left-[580px] opacity-0" >
+        <p className="text-[30px] leading-7 font-400 text-white pr-4">Elegí tu destino y <br /> planifica tu viaje</p>
+        <FaChevronCircleRight className="text-white text-[40px]" />
+      </div>
       <div className="flex flex-row gap-8">
         {Object.values(logos).map((logo, index) => (
           <button
@@ -57,10 +78,11 @@ export default function MenuDestinos() {
             key={index}
             className=" opacity-0"
             onClick={() => {
-              console.log(logos);
+              setImgInicio(logo.img);
+              console.log(imgInicio)
             }}
           >
-            <Image src={logo} alt={`Logo ${index}`} priority />
+            <Image src={logo.logo} alt={`Logo ${index}`} priority />
           </button>
         ))}
       </div>

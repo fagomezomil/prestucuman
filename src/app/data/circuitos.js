@@ -222,7 +222,7 @@ export default function circuitos() {
                 "circuito": "Historica",
                 "nombre": "Ciudad Histórica",	
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
-                "imagen": "/images/quetupi.svg",
+                "imagen": "/images/casahistorica.svg",
                 "textura":"/imagen/textura",
                 "color": "historica",
                 "destinos": [
@@ -231,9 +231,81 @@ export default function circuitos() {
                         "color": "historica",
                         "productos": [
                             {
-                                "nombre": "Portal Solar del Cerro",
-                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
-                                "categorias": ["Aventura", "Naturaleza"],
+                                "nombre": "Casa Histórica de la Independencia",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Cultura", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Casa de Gobierno",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Cultura", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo Histórico Provincial Presidente Nicolás Avellaneda",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Cultura", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo de la Industria Azucarera Obispo Colombres",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Cultura", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Parque 9 de Julio",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo Casa Padilla",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo Folklórico Provincial General Manuel Belgrano",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo Casa de la Ciudad",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Museo"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                            {
+                                "nombre": "Museo Juan Carlos Iramain",
+                                "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Historia", "Museo", "Arte"],
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
@@ -247,7 +319,7 @@ export default function circuitos() {
                 "circuito": "Sur",
                 "nombre": "Sur Tucumano",	
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
-                "imagen": "/images/quetupi.svg",
+                "imagen": "/images/azucenaempanada.svg",
                 "textura":"/imagen/textura",
                 "color": "sur",
                 "destinos": [
@@ -265,14 +337,74 @@ export default function circuitos() {
                                 "imagen": "/images/portal-solar-del-cerro.jpg"
                             },
                         ]
-                    }
+                    },
+                    {
+                        "nombre": "Lules",
+                        "color": "sur",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    },
+                    {
+                        "nombre": "Monteros",
+                        "color": "sur",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    },
+                    {
+                        "nombre": "Concepción",
+                        "color": "sur",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    },
+                    {
+                        "nombre": "Simoca",
+                        "color": "sur",
+                        "productos": [
+                            {
+                                "nombre": "Portal Solar del Cerro",
+                                "detalle": "Shoppings y galerías comercial. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, soluta! Velit, culpa nihil consequatur voluptatibus consectetur, id fugiat, quae maxime rerum quaerat iste?",
+                                "categorias": ["Aventura", "Naturaleza"],
+                                "ubicacion": "null",
+                                "duracion": "2 h",
+                                "link": "null",
+                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                            },
+                        ]
+                    },
                 ]
             },
             {
                 "circuito": "Choromoro",
                 "nombre": "Valle de Choromoro",	
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
-                "imagen": "/images/quetupi.svg",
+                "imagen": "/images/pozoindio.svg",
                 "textura":"/imagen/textura",
                 "color": "choromoro",
                 "destinos": [
@@ -297,7 +429,7 @@ export default function circuitos() {
                 "circuito": "Calchaqui",
                 "nombre": "Valle Calchaquí",	
                 "destacado": "Aumentá tus pulsaciones en una aventura rodeado de naturaleza",
-                "imagen": "/images/quetupi.svg",
+                "imagen": "/images/menhires.svg",
                 "textura":"/imagen/textura",
                 "color": "calchaqui",
                 "destinos": [
