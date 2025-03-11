@@ -31,7 +31,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/percyhill.jpg"
                             },
                             {
                                 "nombre": "Mountainbike/cicloturismo",
@@ -40,7 +40,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "40 min a 3 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/mountainbike.jpg"
                             },
                             {
                                 "nombre": "Sendero 33 viviendas",
@@ -49,7 +49,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "1.30 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/sendero33.jpg"
                             },
                             {
                                 "nombre": "Sendero La Sala - Potrero de las tablas",
@@ -58,7 +58,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "7 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/potrero.jpg"
                             }
                         ]
                     },
@@ -73,7 +73,7 @@ export default function circuitos() {
                                 "ubicacion": "Ruta Provincial N 338 km 29",
                                 "duracion": "1 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/sanjavier.jpg"
                             },
                             {
                                 "nombre": "Sendero El Funicular",
@@ -82,7 +82,7 @@ export default function circuitos() {
                                 "ubicacion": "Partida: Centro asistencial prima",
                                 "duracion": "45 minutos",
                                 "link": "https://www.tucumanturismo.gob.ar/articulos/articulo/97/Ecosendas",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/senderofunicular.jpg"
                             },
                             {
                                 "nombre": "RAKI",
@@ -91,7 +91,7 @@ export default function circuitos() {
                                 "ubicacion": "Avenida Aconquija 3210, al pie del cerro San Javier, en pleno pedemonte, pasando 300 metros la rotonda del Corte",
                                 "duracion": "3 h",
                                 "link": "https://www.rakitucuman.com/",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/raki.jpg"
                             },
                             {
                                 "nombre": "Reserva de Horcomolle",
@@ -100,7 +100,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "3 h",
                                 "link": "https://www.reservahorcomolle.com.ar/",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/horcomolle.jpg"
                             },
                             {
                                 "nombre": "Polo gastronómico y comercial Av. Presidente Perón",
@@ -109,7 +109,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/peron.jpg"
                             },
                             {
                                 "nombre": "Senda Cuesta Vieja",
@@ -237,7 +237,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/casahistorica.jpg"
                             },
                             {
                                 "nombre": "Casa de Gobierno",
@@ -246,7 +246,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/casadegobierno.jpg"
                             },
                             {
                                 "nombre": "Museo Histórico Provincial Presidente Nicolás Avellaneda",
@@ -255,7 +255,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museoavellaneda.jpg"
                             },
                             {
                                 "nombre": "Museo de la Industria Azucarera Obispo Colombres",
@@ -264,7 +264,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museoazucarero.jpg"
                             },
                             {
                                 "nombre": "Parque 9 de Julio",
@@ -282,7 +282,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museopadilla.jpg"
                             },
                             {
                                 "nombre": "Museo Folklórico Provincial General Manuel Belgrano",
@@ -291,7 +291,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museofolclorico.jpg"
                             },
                             {
                                 "nombre": "Museo Casa de la Ciudad",
@@ -300,7 +300,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museociudad.jpg"
                             },
                             {
                                 "nombre": "Museo Juan Carlos Iramain",
@@ -309,7 +309,7 @@ export default function circuitos() {
                                 "ubicacion": "null",
                                 "duracion": "2 h",
                                 "link": "null",
-                                "imagen": "/images/portal-solar-del-cerro.jpg"
+                                "imagen": "/images/museoiramain.jpg"
                             },
                         ]
                     }

@@ -16,6 +16,7 @@ import LogoCalchaqui from "../images/calchaquilogo.svg";
 
 import circuitos from "../data/circuitos";
 import CircuitoSec from "./CircuitoSec";
+import Link from "next/link";
 const circuitosData = circuitos();
 
 const logos = {
@@ -109,7 +110,7 @@ export default function Planifica() {
         <Image
           src={LogoGobTuc}
           alt="logo gob tuc"
-          className="h-[65px] w-fit mr-10"
+          className="h-[65px] w-fit mr-16"
         />
       </div>
       <div className="">
@@ -152,7 +153,7 @@ export default function Planifica() {
           />
         </div>
         {/* barra de itinerario */}
-        <div className="flex items-center w-full h-[45px] bg-neutral-400 absolute rounded-t-md bottom-0 right-0">
+        <div className="flex items-center w-full h-[45px] bg-neutral-500 absolute rounded-t-md bottom-0 right-0">
           <p className="font-700 uppercase text-2xl text-white shrink-0 pl-6">
             Tu itinerario
           </p>
@@ -167,6 +168,7 @@ export default function Planifica() {
           <p className="font-700 uppercase text-2xl text-white shrink-0 mr-4">
             {progressText}
           </p>
+          
           <button
             className="flex items-center px-4 text-white hover:bg-[#206C60] hover:rounded-t-md hover:h-full"
             onClick={handleDownloadClick}
@@ -233,7 +235,9 @@ export default function Planifica() {
                 id=""
                 className="rounded-xl pl-6 py-2 w-full text-[20px] italic"
               />
+              <Link href="/pdf/itinerario2025.pdf" download>
               <button className="text-white bg-[#ED7219] py-2 px-4 rounded-xl font-800 uppercase text-[16px]">Descargar</button>
+              </Link>
               </div>
             </div>
           </div>

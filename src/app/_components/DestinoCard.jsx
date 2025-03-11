@@ -52,7 +52,7 @@ export default function DestinoCard({
                   alt={`imagen ${index}`}
                   width={250}
                   height={180}
-                  className="w-full rounded-t-md"
+                  className="w-full rounded-t-md h-[180px]"
                 />
                 <h4 className="text-[20px] font-700 leading-[19px] px-3 pt-3 uppercase text-neutral-700">
                   {producto.nombre}
@@ -61,7 +61,7 @@ export default function DestinoCard({
                   {producto.categorias.map((categoria, index) => (
                     <p
                       key={index}
-                      className="rounded-md px-2 py-1 bg-[#a5a58a] text-white text-[16px] font-500"
+                      className="rounded-md px-2 py-1 bg-neutral-400 text-white text-[16px] font-500"
                     >
                       {categoria}
                     </p>
@@ -115,7 +115,7 @@ export default function DestinoCard({
         </div>
 
         {productoSeleccionado && (
-          <div className="grid grid-cols-7">
+          <div className="grid grid-cols-7 gap-4 mr-6 mt-4">
             <div className="col-span-2 mt-6 ml-6">
               <p className="text-[30px] font-700 leading-[32px] px-3 pt-3 uppercase text-neutral-700">
                 {productoSeleccionado.nombre}
@@ -124,7 +124,7 @@ export default function DestinoCard({
                 {productoSeleccionado.categorias.map((categoria, index) => (
                   <p
                     key={index}
-                    className="rounded-md px-2 py-1 bg-[#a5a58a] text-white text-[16px] font-500"
+                    className="rounded-md px-2 py-1 bg-neutral-400 text-white text-[14px] font-400"
                   >
                     {categoria}
                   </p>
@@ -134,11 +134,17 @@ export default function DestinoCard({
                 {productoSeleccionado.detalle}
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="flex flex-row items-center gap-2 px-3">
-                <p>Conocé más aquí</p>
-                <GoPlusCircle />
-              </div>
+            <div className="flex flex-row gap-4 mt-10">
+
+            {Array(5)
+              .fill()
+              .map((_, index) => (
+                <img
+                  key={index}
+                  src={productoSeleccionado.imagen}
+                  alt={`Imagen ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         )}
