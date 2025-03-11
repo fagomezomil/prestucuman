@@ -67,9 +67,9 @@ export default function MenuDestinos({ logos, imgInicio, setImgInicio }) {
 
   return (
     <nav className="absolute bottom-10 h-[100px] z-50 flex flex-row items-center gap-8 mr-24 translate-x-[300px] font-sofiacond">
-      <div  ref={textoRef} className="absolute py-2 px-4 flex flex-row items-center border border-white rounded-md -left-[580px] opacity-0" >
-        <p className="text-[30px] leading-7 font-400 text-white pr-4">Elegí tu destino y <br /> planifica tu viaje</p>
-        <FaChevronCircleRight className="text-white text-[40px]" />
+      <div  ref={textoRef} className="absolute mt-4 py-2 px-4 flex flex-row items-center border border-white rounded-md -left-[515px] opacity-0" >
+        <p className="text-[22px] leading-7 font-400 text-white pr-4">Conocé más</p>
+        <FaChevronCircleRight className="text-white text-[30px]" />
       </div>
       <div className="flex flex-row gap-8">
         {Object.values(logos).map((logo, index) => (
