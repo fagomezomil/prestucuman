@@ -87,7 +87,6 @@ export default function Planifica() {
       console.log("nuevos favoritos", nuevosFavoritos);
       const progress =
         (nuevosFavoritos.length / circuitosData.circuitos.length) * 100;
-      console.log("progress", progress);
       setItinerarioProgress(progress);
     },
     [favoritos]
@@ -125,7 +124,7 @@ export default function Planifica() {
             <div className="col-span-5 flex flex-row">
               {Object.values(logos).map((logo, index) => {
                 const isActive = logo.nombre === circuitoSeleccionado;
-                console.log(isActive);
+
                 return (
                   <button
                     key={index}

@@ -2,14 +2,14 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
+import {  useEffect, useState, useRef } from "react";
 import Montana from "../images/montana.svg";
 import TucumanLogo from "../images/tucumanlogo.svg";
 import Tienetodo from "../images/tienetodo.svg";
 import TexturaTucuman from "../images/textura-tucuman.svg";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+
 
 import LogoHistorica from "../images/historicalogo.svg";
 import LogoYungas from "../images/yungaslogo.svg";
@@ -32,7 +32,6 @@ export default function Inicio() {
   const menuDestinosRef = useRef(null);
 
   const [imgInicio, setImgInicio] = useState("casahistorica-inicio");
-  console.log(imgInicio)
 
 const logos = {
   Historica: { nombre: "Historica", logo: LogoHistorica, img: "casahistorica-inicio", color: "historica" },

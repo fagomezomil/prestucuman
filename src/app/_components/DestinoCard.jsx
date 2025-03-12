@@ -11,7 +11,6 @@ export default function DestinoCard({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
-  console.log(productoSeleccionado);
 
   const handleOpenModal = (producto) => {
     setProductoSeleccionado(producto);
@@ -52,6 +51,7 @@ export default function DestinoCard({
                   alt={`imagen ${index}`}
                   width={250}
                   height={180}
+                  
                   className="w-full rounded-t-md h-[180px]"
                 />
                 <h4 className="text-[20px] font-700 leading-[19px] px-3 pt-3 uppercase text-neutral-700">
@@ -117,9 +117,21 @@ export default function DestinoCard({
         {productoSeleccionado && (
           <div className="grid grid-cols-7 gap-4 mr-6 mt-4">
             <div className="col-span-2 mt-6 ml-6">
-              <p className="text-[30px] font-700 leading-[32px] px-3 pt-3 uppercase text-neutral-700">
-                {productoSeleccionado.nombre}
-              </p>
+              <div className="flex flex-row pr-6 items-start">
+                <p className="text-[30px] font-700 leading-[32px] px-3 uppercase text-neutral-700">
+                  {productoSeleccionado.nombre}
+                </p>
+                <button
+                  className={`rounded-full bg-white p-1 text-[32px]`}
+                  onClick={() => actualizarFavoritos(productoSeleccionado.nombre)}
+                >
+                  {favoritos.indexOf(productoSeleccionado.nombre) !== -1 ? (
+                    <PiHeartFill className="text-[#206c60]" />
+                  ) : (
+                    <PiHeartDuotone className="text-[#206c60]" />
+                  )}
+                </button>
+              </div>
               <div className="flex flex-row gap-2 my-2 ml-3 mt-6">
                 {productoSeleccionado.categorias.map((categoria, index) => (
                   <p
@@ -136,15 +148,17 @@ export default function DestinoCard({
             </div>
             <div className="flex flex-row gap-4 mt-10">
 
-            {Array(5)
-              .fill()
-              .map((_, index) => (
-                <img
-                  key={index}
-                  src={productoSeleccionado.imagen}
-                  alt={`Imagen ${index + 1}`}
-                />
-              ))}
+              {Array(5)
+                .fill()
+                .map((_, index) => (
+                  <Image
+                    key={index}
+                    src={productoSeleccionado.imagen}
+                    alt={`Imagen ${index + 1}`}
+                    width={250}
+                    height={180}
+                  />
+                ))}
             </div>
           </div>
         )}

@@ -79,7 +79,6 @@ export default function MenuDestinos({ logos, imgInicio, setImgInicio }) {
             className=" opacity-0"
             onClick={() => {
               setImgInicio(logo.img);
-              console.log(imgInicio)
             }}
           >
             <Image src={logo.logo} alt={`Logo ${index}`} priority />
