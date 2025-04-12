@@ -103,25 +103,25 @@ export default function Planifica() {
           height={60}
           className="h-[60px] ml-6"
         />
-        <p className=" text-neutral-400 text-[42px] font-600 text-center font-sofiacond">
+        <p className="hidden xl:block text-neutral-400 text-[42px] font-600 text-center font-sofiacond">
           Planificá tu viaje al Corazón del Norte Argentino
         </p>
         <Image
           src={LogoGobTuc}
           alt="logo gob tuc"
-          className="h-[65px] w-fit mr-16"
+          className="h-[65px] w-fit mr-16 hidden md:block"
         />
       </div>
       <div className="">
         <div className="w-full">
-          <div className="grid grid-cols-6 w-full">
-            <div className="col-span-1 pl-12 flex flex-row items-center bg-[#206C60] ">
-              <p className="text-[30px] leading-7 font-400 text-white pr-8">
-                Elegí tu destino y <br /> planifica tu viaje
+          <div className="grid grid-cols-6 justify-center w-full">
+            <div className="col-span-6 xl:col-span-1 pl-12 grid grid-cols-4 items-center bg-[#206C60] mni-w-[150px] ">
+              <p className="col-span-2 xl:col-span-3 text-[30px]	shrink-0 leading-7 font-400 text-white ">
+                Elegí tu destino y <br className="hidden xl:block" /> planifica tu viaje
               </p>
-              <FaChevronCircleRight className="text-white text-[40px]" />
+              <FaChevronCircleRight className="text-white w-[40px] h-[40px]" />
             </div>
-            <div className="col-span-5 flex flex-row">
+            <div className="col-span-6 xl:col-span-5 flex flex-row">
               {Object.values(logos).map((logo, index) => {
                 const isActive = logo.nombre === circuitoSeleccionado;
 
@@ -211,7 +211,7 @@ export default function Planifica() {
                 alt="logo gob tuc"
                 width={180}
                 height={180}
-                className="h-[200px] w-[200px] p-6"
+                className="h-[200px] w-[200px] p-6 "
               />
               <div className="flex flex-col items-start">
                 <span className="py-2">

@@ -34,7 +34,7 @@ export default function CircuitoSec({ circuitosData, favoritos, actualizarFavori
                         </div>
                     </div>
                     <Image src={circuito.imagen} width={500} height={500} alt={circuito.nombre} className="absolute -bottom-10 left-0" />
-                    <div className="col-span-5 mt-4 overflow-y-scroll scroll-smooth h-[75vh]">
+                    <div className="col-span-5 mt-4 overflow-y-auto h-[75vh]">
                         <DestinoCard circuito={circuito} favoritos={favoritos} actualizarFavoritos={actualizarFavoritos} />
                     </div>
                 </div>
